@@ -20,4 +20,5 @@ classificador.fit(previsores, classe, batch_size = 10, epochs = 100)
 classificador_json = classificador.to_json()
 with open('classificador_breast.json', 'w') as json_file:
     json_file.write(classificador_json)
+    
 classificador.save_weights('classificador_breast.h5')
